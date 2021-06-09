@@ -1,8 +1,10 @@
 <template>
   <main>
     <section v-if="posts" class="w-full max-w-5xl mx-auto">
-      <h1 class="title">Présentation</h1>
-      <posts post-type="presentation" :amount="10" />
+      <picture>
+        <img src='/assets/images/TRIO_PEX.jpg' alt="Photo du groupe Trio Liny">
+      </picture>
+      <h1 class="title">Trio liny</h1>
     </section>
   </main>
 </template>
