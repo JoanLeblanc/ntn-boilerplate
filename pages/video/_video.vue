@@ -26,9 +26,9 @@ export default {
   async asyncData({ $content, params, error }) {
     let post;
     try {
-      post = await $content("projects", params.project).fetch();
+      post = await $content("video", params.video).fetch();
     } catch (e) {
-      error({ message: "Project not found" });
+      error({ message: "video not found" });
     }
     return { post };
   },
