@@ -8,17 +8,3 @@
     </section>
   </main>
 </template>
-
-<script>
-export default {
-  async asyncData({ $content, error }) {
-    let posts;
-    try {
-      posts = await $content("presentation").fetch();
-    } catch (e) {
-      error({ message: "Presentation posts not found" });
-    }
-    return { posts };
-  },
-}
-</script>
