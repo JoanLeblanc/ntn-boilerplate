@@ -58,5 +58,5 @@ collections:
     preview_path: 'video/{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Vidéo', name: 'body', widget: 'markdown', required: false }
+      - { label: 'Lien vidéo', name: 'lien_video', widget: 'string', required: false }
+      - { label: 'Vidéo description', name: 'body', widget: 'markdown', required: false }

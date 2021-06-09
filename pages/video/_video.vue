@@ -13,16 +13,9 @@
         >
         <!-- <h6 class="inline py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6> -->
         <h1 class="">{{ post.title }}</h1>
-        <p class="mt-1 mb-8 text-primary-600 dark:text-primary-400">{{ post.description }}</p>
+        <p class="mt-1 mb-8 text-primary-600 dark:text-primary-400">{{ post.body }}</p>
+        <iframe src="{{post.lien_video}}"></iframe>
         <nuxt-content :document="post" />
-        <div v-if="post.gallery" class="nuxt-content">
-          <img
-            v-for="image in post.gallery"
-            class="image"
-            :key="image.id"
-            :src="image"
-          >
-        </div>
       </article>
     </section>
   </main>
