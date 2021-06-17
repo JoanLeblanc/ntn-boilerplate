@@ -8,5 +8,9 @@
       <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Dernières actualités</h3>
       <posts post-type="agenda" :amount="1" />
     </section>
+    <section class="mt-8">
+      <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Dernières vidéos</h3>
+      <posts post-type="video" :amount="1" />
+    </section>
   </main>
 </template>

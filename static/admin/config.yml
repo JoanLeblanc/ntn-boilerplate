@@ -49,8 +49,8 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
   - name: 'video'
-    label: 'Vidéos'
-    label_singular: 'Vidéo'
+    label: 'Videos'
+    label_singular: 'Video'
     folder: 'content/video'
     create: true
     format: 'frontmatter'
