@@ -1,5 +1,5 @@
 ---
-title: Vidéo
+title: Koechlin / Trio Ligny - 4 petites pièces - Mvt 2
 lien_video: https://www.youtube.com/embed/Zn3HuqfUa_A
 ---
 
