@@ -26,8 +26,11 @@ export default {
   async asyncData({ $content, params, error }) {
     let post;
     try {
+
       post = await $content("video", params.video).fetch();
+      console.log('Oui video found')
     } catch (e) {
+      console.error(e)
       error({ message: "video not found" });
     }
     return { post };
