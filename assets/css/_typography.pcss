@@ -1,4 +1,10 @@
+
 @layer base {
+  @font-face {
+    font-family: 'Amsterdam Signature';
+    src: url('../font/Amsterdam Signature.woff');
+    font-style: normal;
+  }
   article {
     max-width: 80ch;
     @apply mx-auto;
@@ -102,6 +108,7 @@
 
   .title {
     color: var(--text-secondary);
+    font-family: 'Amsterdam Signature'; 
     @apply block text-2xl font-sans font-bold transition-colors duration-200 ease-in-out;
   }
 
@@ -198,10 +205,14 @@
 
   @screen sm {
     .title {
-      @apply text-4xl;
+      font-family: 'Amsterdam Signature';
+      font-size: 160px;
+      font-weight: 500
     }
     .subtitle {
-      @apply text-3xl;
+      font-family: 'Amsterdam Signature';
+      font-size: 120px;
+      font-weight: 500
     }
     .nuxt-content {
       & ul {

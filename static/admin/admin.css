@@ -1,3 +1,5 @@
+
+
 .frame-content {
   margin: 1rem;
 }
@@ -29,4 +31,18 @@ h4,
 h5,
 h6 {
   font-family: Inter, system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.conteneur
+{
+position: relative;
+}
+
+.conteneur iframe
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }

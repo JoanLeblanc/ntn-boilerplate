@@ -1,10 +1,14 @@
 <template>
   <main>
-    <section v-if="posts" class="w-full max-w-5xl mx-auto">
+    <section class="w-full max-w-5xl mx-auto">
+
       <div>
-        <img src='/assets/images/TRIO_PEX.jpg' alt="Photo du groupe Trio Liny">
+        <h1 class="title text-center">Trio Ligny - Présentation</h1>
+        <div>
+          <img src='../../assets/images/TRIO_PEX.jpg' alt="Photo du groupe Trio Liny">
+        </div>
       </div>
-      <h1 class="title">Trio liny</h1>
+
     </section>
   </main>
 </template>
