@@ -1,5 +1,5 @@
 ---
-title: Vidéeo
+title: Vidéo
 lien_video: "https://www.youtube.com/watch?v=Zn3HuqfUa_A "
 ---
 
