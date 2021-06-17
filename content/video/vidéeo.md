@@ -1,6 +1,6 @@
 ---
 title: Vidéo
-lien_video: "https://www.youtube.com/watch?v=Zn3HuqfUa_A "
+lien_video: https://www.youtube.com/embed/Zn3HuqfUa_A
 ---
 
 
