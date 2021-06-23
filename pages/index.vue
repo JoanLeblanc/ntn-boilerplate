@@ -15,11 +15,18 @@
     </section>
 
     <section class="mt-8">
-      <h3 class="subtitle text-center text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Actualités</h3>
+      <div>
+        <h3 class="subtitle text-center text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Actualités</h3>
+        <a href="/agenda"><p class="text-center"> Toutes les actualités</p></a>
+      </div>
       <posts post-type="agenda" :amount="1" />
     </section>
     <section class="mt-8">
-      <h3 class="subtitle text-center text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Dernières vidéos</h3>
+      <div>
+        <h3 class="subtitle text-center text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Dernières vidéos</h3>
+        <a href="/video"><p class="text-center"> Toutes les vidéos</p></a>
+
+      </div>
       <posts post-type="video" :amount="1" />
     </section>
   </main>

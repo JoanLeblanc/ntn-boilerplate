@@ -11,13 +11,15 @@
           class="cover-image"
           :src="post.cover"
         >
-        <!-- <h6 class="inline py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6> -->
-        <h1 class="">{{ post.title }}</h1>
-        <p class="mt-1 mb-8 text-primary-600 dark:text-primary-400">{{ post.body }}</p>
-        <div class="container">
+        <h1 class="text-center">{{ post.title }}</h1>
+        <div class="container m-t-20">
           <iframe class="responsive-iframe" :src="post.lien_video"></iframe>
         </div>
-        <nuxt-content :document="post" />
+        <div>
+            <h6 class="italic m-t-20">Plus d'informations: </h6>
+            <nuxt-content :document="post" />
+        </div>
+
       </article>
     </section>
   </main>

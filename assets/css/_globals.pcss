@@ -30,10 +30,44 @@ body {
   height: 100%;
 }
 
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-pres-left {
+  object-fit: cover;
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  float: left;
+}
+
+.img-pres-right {
+  object-fit: cover;
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  float: right;
+}
+
+nav ul li {
+  font-size: 1.25rem;
+}
+
 @media (max-width: 1440px)  {
   .container {
     padding-top: 50%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
+
 }
 
 
@@ -41,4 +75,8 @@ body {
   .post-video&container {
     display: none;
   }
-}
+    .img-pres {
+    width: 100%;
+    height: auto;
+  }
+ }

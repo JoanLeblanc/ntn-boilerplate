@@ -1,7 +1,7 @@
 <template>
   <main>
     <section v-if="post" class="w-full max-w-5xl mx-auto">
-      <h1 class="title text-center">Video</h1>
+      <h1 class="title text-center">Vidéos</h1>
       <posts post-type="video" :amount="10" />
     </section>
   </main>
@@ -12,7 +12,6 @@ export default {
     let post;
     try {
       post = await $content("video", params.video).fetch();
-      console.log(post)
     } catch (e) {
       error({ message: "video not found" });
     }
