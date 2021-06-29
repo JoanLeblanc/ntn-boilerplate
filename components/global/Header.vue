@@ -8,7 +8,7 @@
         <nuxt-link class="btn block" to="/presentation">Présentation</nuxt-link>
       </li>
       <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/video">Videos</nuxt-link>
+        <nuxt-link class="btn block" to="/video">Vidéos</nuxt-link>
       </li>
       <li class="flex-1 ml-2">
         <nuxt-link class="btn block" to="/agenda">Agenda</nuxt-link>

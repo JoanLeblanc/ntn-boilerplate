@@ -4,7 +4,8 @@
       <article>
         <div>
             <h1 class="title text-center">Trio Ligny</h1>
-            <p>/Message Presentation/ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Touchant, surprenant, sensible, le Trio Ligny vous emmène dans un univers musical sublimé par le mariage du violon, du cor et du piano.</p>
+            <p>De Mozart à John Williams, en passant par l’incontournable trio de Brahms, le Trio Ligny saura vous amener dans un voyage musical plein de romantisme et de surprise.</p>
             <div class="container">
               <iframe class="responsive-iframe" src="https://www.youtube.com/embed/QPFz7lEHGVY"></iframe>
             </div>
