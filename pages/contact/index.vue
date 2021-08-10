@@ -13,8 +13,8 @@
       <div class="m-t-40">
         <h3 class="ta-center">Retrouvez-nous sur :</h3>
         <div class="d-flex m-t-20 justify-space-evenly">
-          <div><a href="https://www.facebook.com/trioligny"><img width="75" src='../../assets/images/facebook-logo.png' ></a></div>
-          <div><a href="https://www.youtube.com/channel/UC-ihPIPv-yHhaYbcKBvpx-g"> <img width="75" src='../../assets/images/youtube-logo.png' ></a></div>
+          <div><a href="https://www.facebook.com/trioligny" target="_blank"><img width="75" src='../../assets/images/facebook-logo.png' ></a></div>
+          <div><a href="https://www.youtube.com/channel/UC-ihPIPv-yHhaYbcKBvpx-g" target="_blank"> <img width="75" src='../../assets/images/youtube-logo.png'  ></a></div>
         </div>
       </div>
       </div>
