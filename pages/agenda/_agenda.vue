@@ -1,5 +1,7 @@
 <template>
   <main>
+    <h2 class="title text-center">A venir</h2>
+
     <section v-if="post">
       <nav class="mb-8" aria-label="go back">
         <router-back class="block" />
@@ -17,6 +19,8 @@
         <nuxt-content :document="post" />
       </article>
     </section>
+    <h2 class="title text-center">Concert passé</h2>
+
   </main>
 </template>
 
