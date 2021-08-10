@@ -20,7 +20,7 @@
         <h3 class="subtitle text-center text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Actualités</h3>
         <a href="/agenda"><p class="text-center"> Toutes les actualités</p></a>
       </div>
-      <posts post-type="agenda" :amount="1" />
+      <posts :dataSpeciale="prochainConcert" :sortBy="{key: 'date', direction: 'desc'}" post-type="agenda" :amount="1" />
     </section>
     <section class="mt-8">
       <div>
@@ -32,3 +32,30 @@
     </section>
   </main>
 </template>
+
+<script>
+export default {
+  async asyncData({ $content, error }) {
+    let posts;
+    let prochainConcert = [];
+    const toDate = (dateStr) => {
+      const [day, month, year] = dateStr.split("/")
+      return new Date(year, month - 1, day + 1 )
+    }
+    try {
+      posts = await $content("agenda").fetch();
+      posts.forEach(concert => {
+
+        if (toDate(concert.date) > new Date()) {
+          prochainConcert.push(concert)
+        }
+      })
+      prochainConcert.sort((a,b)=> toDate(b.date) - toDate(a.date))
+    } catch (e) {
+      error({ message: "agenda not found" });
+    }
+
+    return { posts, prochainConcert };
+  },
+}
+</script>

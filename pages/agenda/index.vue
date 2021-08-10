@@ -18,9 +18,9 @@ export default {
     let postsFuturs = [];
     let postPasses = [];
     const toDate = (dateStr) => {
-    const [day, month, year] = dateStr.split("/")
-    return new Date(year, month - 1, day + 1 )
-  }
+      const [day, month, year] = dateStr.split("/")
+      return new Date(year, month - 1, day + 1 )
+    }
     try {
       posts = await $content("agenda").fetch();
       posts.forEach(concert => {
@@ -31,6 +31,9 @@ export default {
           postPasses.push(concert)
         }
       })
+      postsFuturs.sort((a,b)=> toDate(b.date) - toDate(a.date))
+      postPasses.sort((a,b)=> toDate(b.date) - toDate(a.date))
+
     } catch (e) {
       error({ message: "agenda not found" });
     }

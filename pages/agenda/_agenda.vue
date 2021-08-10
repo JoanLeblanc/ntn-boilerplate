@@ -26,7 +26,6 @@ export default {
     let post;
     try {
       post = await $content("agenda", params.agenda).fetch();
-      console.log(post)
     } catch (e) {
       console.error(e)
       error({ message: "agenda not found" });

@@ -27,9 +27,9 @@
             <span class="flex justify-between align-baseline">
               <h3 class="card-title ">{{ post.title }}</h3>
               <h6
-                v-if="post.createdAt"
+                v-if="post.date"
                 class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
-              >{{ formatDate(post.createdAt) }}</h6>
+              >{{ post.date }}</h6>
             </span>
             <p class="mt-2">{{ post.description }}</p>
           </span>
@@ -101,6 +101,10 @@
       formatDate(dateString) {
         const date = new Date(dateString)
         return date.toLocaleDateString(process.env.lang) || ''
+      },
+      toDate(dateStr) {
+        const [day, month, year] = dateStr.split("/")
+        return new Date(year, month - 1, day + 1 )
       },
       async fetchPosts(
           dataSpeciale = this.dataSpeciale,
