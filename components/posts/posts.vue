@@ -70,6 +70,13 @@
           direction: 'desc' // you probably want 'asc' here
         }),
         validator: (obj) => typeof obj.key === 'string' && typeof obj.direction === 'string',
+      },
+      where: {
+        type: Object,
+        default: () => ({ }),
+      },
+      dataSpeciale: {
+        type: Array,
       }
     },
     data() {
@@ -87,6 +94,7 @@
     async mounted() {
       this.loading = true;
       this.posts = await this.fetchPosts();
+      console.log(this.posts)
       this.loading = false;
     },
     methods: {
@@ -95,10 +103,17 @@
         return date.toLocaleDateString(process.env.lang) || ''
       },
       async fetchPosts(
+          dataSpeciale = this.dataSpeciale,
+          where = this.where,
           postType = this.postType,
           amount = this.amount,
           sortBy = this.sortBy,
         ) {
+          console.log(this.dataSpeciale)
+
+          if(dataSpeciale && dataSpeciale.length > 0) {
+            return dataSpeciale
+          }
         return this.$content(postType)
           .sortBy(sortBy.key, sortBy.direction)
           .limit(amount)

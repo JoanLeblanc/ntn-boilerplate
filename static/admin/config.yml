@@ -46,7 +46,7 @@ collections:
     #   preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Date concert', name: 'date', widget: 'datetime', default: '', format: 'dd/MM/yyyy'}
+      - { label: 'Date concert', name: 'date', widget: 'datetime', default: '', format: 'DD/MM/YYYY'}
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
   - name: 'video'

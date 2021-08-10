@@ -1,7 +1,5 @@
 <template>
   <main>
-    <h2 class="title text-center">A venir</h2>
-
     <section v-if="post">
       <nav class="mb-8" aria-label="go back">
         <router-back class="block" />
@@ -14,13 +12,11 @@
           :src="post.cover"
         >
         <!-- <h6 class="inline py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6> -->
-        <h1 class="">{{ post.title }}</h1>
+        <h1 class="">{{ post.title }} : le {{ post.date}}</h1>
         <p class="mt-1 mb-8 text-primary-600 dark:text-primary-400">{{ post.description }}</p>
         <nuxt-content :document="post" />
       </article>
     </section>
-    <h2 class="title text-center">Concert passé</h2>
-
   </main>
 </template>
 
@@ -30,9 +26,13 @@ export default {
     let post;
     try {
       post = await $content("agenda", params.agenda).fetch();
+      console.log(post)
     } catch (e) {
+      console.error(e)
       error({ message: "agenda not found" });
+
     }
+    console.log(post)
     return { post };
   },
 }
