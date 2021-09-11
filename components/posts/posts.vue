@@ -94,7 +94,7 @@
     async mounted() {
       this.loading = true;
       this.posts = await this.fetchPosts();
-      console.log(this.posts)
+      console.log('Posts', this.posts)
       this.loading = false;
     },
     methods: {
