@@ -31,7 +31,6 @@ export default {
       error({ message: "agenda not found" });
 
     }
-    console.log(post)
     return { post };
   },
 }

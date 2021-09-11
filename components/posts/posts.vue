@@ -94,7 +94,6 @@
     async mounted() {
       this.loading = true;
       this.posts = await this.fetchPosts();
-      console.log('Posts', this.posts)
       this.loading = false;
     },
     methods: {
@@ -113,7 +112,6 @@
           amount = this.amount,
           sortBy = this.sortBy,
         ) {
-          console.log(this.dataSpeciale)
 
           if(dataSpeciale && dataSpeciale.length > 0) {
             return dataSpeciale
