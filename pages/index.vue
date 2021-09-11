@@ -39,8 +39,14 @@ export default {
     let posts;
     let prochainConcert = [];
     const toDate = (dateStr) => {
+      Date.prototype.addDays = function (days) {
+        const date = new Date(this.valueOf());
+        date.setDate(date.getDate() + days);
+        return date;
+      };
       const [day, month, year] = dateStr.split("/")
-      return new Date(year, month - 1, day + 1 )
+      const newDate =  new Date(year, month-1,day)
+      return newDate.addDays(1)
     }
     try {
       posts = await $content("agenda").fetch();
